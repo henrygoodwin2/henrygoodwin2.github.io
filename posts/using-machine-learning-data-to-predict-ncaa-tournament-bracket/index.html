@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Henry Goodwin">
-<meta name="dcterms.date" content="2024-04-09">
+<meta name="dcterms.date" content="2024-04-16">
 
 <title>Henry Goodwin’s Sports Data Blog - How I filled out my NCAA tournament bracket using machine learning algorithms</title>
 <style>
@@ -159,7 +159,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">April 9, 2024</p>
+        <p class="date">April 16, 2024</p>
       </div>
     </div>
     
@@ -218,7 +218,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 ✖ dplyr::lag()      masks stats::lag()
 ✖ yardstick::spec() masks readr::spec()
 ✖ recipes::step()   masks stats::step()
-• Learn how to get started at https://www.tidymodels.org/start/</code></pre>
+• Use tidymodels_prefer() to resolve common conflicts.</code></pre>
 </div>
 <details>
 <summary>Code</summary>
@@ -2952,7 +2952,7 @@ The following objects are masked from 'package:base':
 <p>2/4 in the final 4 while correctly guessing UConn repeating isn’t too shabby, but all 1 seeds in the final 4 isn’t exactly a bold take. I also think part of the reason why all the 1 seeds made it for me was because my model had so many upsets that it left a decently easy road for all of them.</p>
 <p>Whether I should’ve included more predictors or not, I was in the 76th percentile of bracket makers, leaving 6.2 million brackets better than mine. In our class group I was tied for fifth. Guessing the champion didn’t earn me many points in the competition, since all but two had UConn winning it all. I guess that just speaks to how dominant that team is. Nine different models using different predictors all came to the conclusion that another UConn championship was inevitable.</p>
 <p>If I were to make my model again, I would definitely want to include some sort of Elo system to make some conferences better than others. That way I wouldn’t have so many predicted upsets, like McNeese winning a couple of games because they dogwalked the Montana School for the Visually Impaired. Even some sort of system that gave teams with a higher seed more of a leg up would be helpful. I think I would also choose to include more than just rebound margin and offensive and defensive efficiency.</p>
-<p>The code I used to make my model was greatly helped by hoopR and Tidymodels</p>
+<p>The code I used to make my model was greatly helped by hoopR and Tidymodels.</p>
 
 
 
